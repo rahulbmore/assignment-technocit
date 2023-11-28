@@ -640,7 +640,7 @@ body {
         color: #1b6ce1;
     }
     .navbar{
-        background-color: red;
+        background-color: rgb(180, 180, 180);
     }
 }
 
@@ -709,6 +709,11 @@ body {
     }
 }
 
+@media (max-width: 767.98px) {
+    .banner-text h3{
+        font-size: 30px;
+    }
+}
 
 
 @media (max-width: 991.98px) {
@@ -727,9 +732,7 @@ body {
     .our-features .row{
         flex-wrap: wrap;
     }
-    .banner-text h3{
-        font-size: 22px;
-    }
+    
     .custom-btn{
         padding: 10px 15px;
         font-size: 16px;
@@ -737,11 +740,10 @@ body {
     .features .section-title h3{
         text-align: left!important;
     }
-    .logo {
-        width: 120px;
-        background-color: #000;
-        opacity: 05;
+    .section-title h3{
+        font-size: 30px;
     }
+  
     
 }
 
@@ -750,4 +752,5 @@ body {
     .featuresTwo {
         margin-left: 350px;
     }
+
 }
