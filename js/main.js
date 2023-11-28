@@ -106,17 +106,37 @@ slider.oninput = function () {
     output.innerHTML = this.value;
 }
 
+var slider1 = document.getElementById("myAmount");
+var output1 = document.getElementById("selectedAmount");
+output1.innerHTML = slider1.value;
+
+slider1.oninput = function() {
+  output1.innerHTML = this.value;
+}
 
 function updateGradient(rangeValue) {
     const percentage = (rangeValue - slider.min) / (slider.max - slider.min) * 100;
     slider.style.backgroundImage = `linear-gradient(90deg, #000000 ${percentage}%, transparent ${percentage}%)`;
 }
 
+function updateGradient1(rangeValue) {
+    const percentage = (rangeValue - slider1.min) / (slider1.max - slider1.min) * 100;
+    slider1.style.backgroundImage = `linear-gradient(90deg, #000000 ${percentage}%, transparent ${percentage}%)`;
+}
+
 // Update gradient onload
+updateGradient1(slider1.value);
 updateGradient(slider.value);
 
 // Update gradient oninput
 slider.addEventListener('input', (e) => {
     output.innerHTML = e.target.value;
     updateGradient(e.target.value);
+});
+
+
+// Update gradient oninput
+slider1.addEventListener('input', (e) => {
+    output1.innerHTML = e.target.value;
+    updateGradient1(e.target.value);
 });

@@ -593,6 +593,17 @@ body {
 
 }
 
+.branch-atm-locator .active{
+    color: var(--primary);
+    font-weight: bold;
+}
+.custom-input{
+ border:1px solid #ced4da;
+ padding:.375rem .75rem;
+ background-color: white;
+ border-radius: .25rem;
+}
+
 /* responsive css */
 
 

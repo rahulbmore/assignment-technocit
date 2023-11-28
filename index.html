@@ -656,7 +656,7 @@
                 <h3 class="mb-0 fw-bold">Calculator</h3>
             </div>
             <div class="row">
-                <div class="col-lg-7 col-md-6 light-bg px-5 py-3 wow zoomIn">
+                <div class="col-lg-7 col-md-6 light-bg px-5 py-4 wow zoomIn">
                     <div class="calc-box">
                         <ul class="nav nav-tabs" id="myTab" role="tablist">
                             <li class="nav-item" role="presentation">
@@ -700,12 +700,12 @@
                                         <label for="inputPassword" class="col-sm-3 col-form-label fw-bold">I
                                             need</label>
                                         <div class="col-sm-3">
-                                            <input type="text" class="form-control" id="demo1" value="AED 30000">
+                                            <!-- <input type="text" class="form-control" id="selectedAmount" value="AED 30000"> -->
+                                            <p class="custom-input"> <span id="selectedAmount"></span></p>
                                         </div>
 
                                         <div class="slidecontainer w-75 mt-2">
-                                            <input id="myRange1" type="range" min="1" max="1000" value="1000000"
-                                                class="range-slider">
+                                            <input type="range" min="1" max="100" value="50" class="range-slider" id="myAmount">
                                             <div class="d-flex align-items-center w-100">
                                                 <span class="w-100">AED 1000</span>
                                                 <span class="ml-auto d-flex justify-content-end w-100">AED
@@ -718,7 +718,7 @@
                                         <label for="inputPassword" class="col-sm-3 col-form-label fw-bold">I will repay
                                             in</label>
                                         <div class="col-sm-3">
-                                            <input type="text" class="form-control" id="demo" value="36 month">
+                                            <p class="custom-input"><span id="demo"></span></p>
                                         </div>
 
                                         <div class="slidecontainer w-75 mt-2">
@@ -882,76 +882,78 @@
     <!-- our service end -->
 
     <!-- Branch Atm locator section Start -->
-    <div class="container-fluid py-5  mt-5 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-5">
-                    <div class="position-relative pb-3">
-                        <h2 class="mb-0 fw-bold">Branch/ATM Locator</h2>
+    <Section class="branch-atm-locator">
+        <div class="container-fluid py-5  mt-5 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <div class="position-relative pb-3">
+                            <h2 class="mb-0 fw-bold">Branch/ATM Locator</h2>
+                        </div>
+                        <form>
+                            <div class="col-8 mt-4 d-flex justify-content-center align-items-center">
+                                <select class="form-select border border-2 rounded-3" style="height: 45px;">
+                                    <option selected>Select A City</option>
+                                    <option value="1">Lorem ipsum</option>
+                                    <option value="2">Lorem ipsum</option>
+                                    <option value="3">Lorem ipsum</option>
+                                </select>
+                                <img src="./img/gis_location_1_866.svg" alt="Img" class="ms-3 fs-6">
+                            </div>
+
+                            <div class="col-8 mt-4">
+                                <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+                                    <div class="form-group">
+                                        <input type="checkbox" id="html" checked>
+                                        <label for="html">ALL</label>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="checkbox" id="css">
+                                        <label for="css">Branches</label>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="checkbox" id="javascript">
+                                        <label for="javascript">ATM</label>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <label class="text-muted">116 location found</label>
+                                </div>
+
+                                <div class="mt-3">
+                                    <label class="fw-bold mb-2 title">Branches</label>
+                                    <ul class="list-unstyled">
+                                        <li class="mb-1 active">Islamic banking</li>
+                                        <li class="mb-1">CBD Elite lounge</li>
+                                        <li class="mb-1">Extended hours</li>
+                                        <li class="mb-1">Business banking</li>
+                                    </ul>
+
+
+                                    <label class="fw-bold mb-2 title">ATM</label>
+                                    <ul class="list-unstyled">
+                                        <li class="mb-1 active">Inside lobby</li>
+                                        <li class="mb-1">Cash Deposit</li>
+                                        <li class="mb-1">24 hours</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </form>
+
+
                     </div>
-                    <form>
-                        <div class="col-8 mt-4 d-flex justify-content-center align-items-center">
-                            <select class="form-select border border-2 rounded-3" style="height: 45px;">
-                                <option selected>Select A City</option>
-                                <option value="1">Lorem ipsum</option>
-                                <option value="2">Lorem ipsum</option>
-                                <option value="3">Lorem ipsum</option>
-                            </select>
-                            <img src="./img/gis_location_1_866.svg" alt="Img" class="ms-3 fs-6">
+                    <div class="col-lg-7" style="min-height: 500px; ">
+                        <div style="width: 100%"><iframe width="100%" height="600" frameborder="0" scrolling="no"
+                                marginheight="0" marginwidth="0"
+                                src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=dubai+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a
+                                    href="https://www.maps.ie/population/">Calculate population in area</a></iframe>
                         </div>
-
-                        <div class="col-8 mt-4">
-                            <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
-                                <div class="form-group">
-                                    <input type="checkbox" id="html" checked>
-                                    <label for="html">ALL</label>
-                                </div>
-                                <div class="form-group">
-                                    <input type="checkbox" id="css">
-                                    <label for="css">Branches</label>
-                                </div>
-                                <div class="form-group">
-                                    <input type="checkbox" id="javascript">
-                                    <label for="javascript">ATM</label>
-                                </div>
-                            </div>
-
-                            <div>
-                                <label class="text-muted">116 location found</label>
-                            </div>
-
-                            <div class="mt-3">
-                                <label class="fw-bold mb-2 title">Branches</label>
-                                <ul class="list-unstyled">
-                                    <li class="mb-1 active">Islamic banking</li>
-                                    <li class="mb-1">CBD Elite lounge</li>
-                                    <li class="mb-1">Extended hours</li>
-                                    <li class="mb-1">Business banking</li>
-                                </ul>
-
-
-                                <label class="fw-bold mb-2 title">ATM</label>
-                                <ul class="list-unstyled">
-                                    <li class="mb-1 active">Inside lobby</li>
-                                    <li class="mb-1">Cash Deposit</li>
-                                    <li class="mb-1">24 hours</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </form>
-
-
-                </div>
-                <div class="col-lg-7" style="min-height: 500px; ">
-                    <div style="width: 100%"><iframe width="100%" height="600" frameborder="0" scrolling="no"
-                            marginheight="0" marginwidth="0"
-                            src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=dubai+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a
-                                href="https://www.maps.ie/population/">Calculate population in area</a></iframe>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </Section>
     <!-- Branch Atm locator end -->
 
 
