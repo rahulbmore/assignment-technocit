@@ -122,6 +122,17 @@ body {
     left: 0;
     align-items: end;
 }
+.carousel-box h4 {
+    font-size: 22px;
+    font-weight: 600 !important;
+}
+
+.carousel-box p {
+    font-size: 16px;
+    color:#898989;
+}
+
+
 .recent-work-warpper {
     display: block;
 }
@@ -208,6 +219,9 @@ body {
 .calculator .nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {
     border-color: transparent transparent transparent;
     background-color: transparent;
+}
+.section-title h3{
+    font-size:45px;
 }
 .section-title :before {
     background-color: #1b6ce1;
@@ -625,6 +639,9 @@ body {
     .navbar-dark .navbar-brand h1 {
         color: #1b6ce1;
     }
+    .navbar{
+        background-color: red;
+    }
 }
 
 @media (min-width: 992px) {
@@ -719,6 +736,11 @@ body {
     }
     .features .section-title h3{
         text-align: left!important;
+    }
+    .logo {
+        width: 120px;
+        background-color: #000;
+        opacity: 05;
     }
     
 }
